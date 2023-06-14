@@ -7,6 +7,7 @@ datepicker("#date", {
   minDate: new Date(2023, 4, 1),
   dateSelected: new Date(2023, 4, 5),
   overlayPlaceholder: "Введите год",
+  disableMobile: true, 
   customMonths: [
     "Январь",
     "Февраль",
