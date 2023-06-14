@@ -1,0 +1,351 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sec2{ 
+    margin-top: 216px;
+    max-width: 1275px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 413px;
+    border-radius: 20px;
+    background: url('../../src/img/sec-2-car.png')no-repeat;
+    background-position: center;
+}
+.sec2_p{
+    width: 543px;
+    margin: 0 20px 0 95px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.sec2_btn{
+    padding: 20px 40px;
+    white-space: nowrap;
+    border-radius: 20px;
+    border: none;
+    margin-left: auto;
+    margin-right: 155px;
+    background: rgba(243, 147, 13, 0.671);
+    
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+.sec2_btn:hover{
+    background: rgba(243, 147, 13, 0.81);
+}
+.sec2_btn:active{
+    transform: translateY(1px);
+}
+.link_list{
+    position: relative;
+    bottom: 125px;
+}
+.modal-p{
+    font-weight: 400;
+    font-size: 18.187px;
+    line-height: 22px;
+    margin: 13px 0px 7px 0px;
+    user-select: none;
+    color: #CBCBCB;
+}
+.modal-input{
+    width: 348.06px;
+    height: 58.01px;
+    top: 0px;
+    padding-left: 17px;
+    border: none;
+    outline: none;
+    font-size: 25px;
+    background: #F1F1F1;
+    border-radius: 11.602px;
+}
+
+.modal-btn{
+    height: 58px;
+    border: none;
+    background: #F3930D;
+    border-radius: 11.602px;
+    font-weight: 700;
+    font-size: 18.187px;
+    line-height: 22px;
+    user-select: none;
+    color: #FFFFFF;
+}
+.modal-btn:hover{
+        background: rgba(243, 147, 13, 0.81);
+        cursor: pointer;
+}
+.modal-btn-create{
+    width: 348px;
+    margin-top: 29px;
+}
+.modal-p-p{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    user-select: none;
+    text-align: center;
+    margin-top: 20px;
+    color: #8E8E8E;
+}
+.modal-a-create{
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    text-align: center;
+    user-select: none;
+    color: #F3930D;
+}
+.modal-label{
+    font-weight: 400;
+    font-size: 18.187px;
+    line-height: 22px;
+    user-select: none;
+    color: #8E8E8E;
+}
+.authorization{
+    width: 573px;
+    height: 474px;
+    border-radius: 30px;
+    padding: 82px 112px 71px 112px;
+}
+.modal-btn-auth{
+    width: 168px;
+}
+.modal-tel{
+    width: 100%;
+    font-size: 25px;
+}
+.input-dateOfBirth{
+    color: #F3930D;
+    text-align: center;
+}
+.checkbox {
+	position:relative;
+    left: 92px;
+}
+.checkbox input[type=checkbox] {
+	display:none;
+}
+.checkbox label:after {
+	content:'';
+    border-radius: 5px;
+	display:block;
+	height:20px;
+	width:20px;
+	border:1px solid #8E8E8E;
+	position:absolute;
+	top:0;
+    right: 95px;
+    
+}
+.checkbox input[type=checkbox]:checked + label:after {
+	border:1px solid #F3930D; 
+	background-color:#F3930D;
+    content: url('../../src/img/checkmark.svg');
+    line-height: 15px;
+    text-align: center;
+}
+.checkbox label:hover{
+    cursor: pointer;
+}
+.authorization-2{
+    display: flex;
+    align-items: center;
+    margin-top: 29px;
+}
+.modal-a-auth{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    user-select: none;
+    color: #8E8E8E;
+}
+.authorization-2-a{
+    display: flex;
+    margin-top: 29px;
+    justify-content: space-between
+    
+}
+#password1,#password2,#password3{
+	width: 100%;
+	font-size: 25px;
+}
+.password{
+    position: relative;
+}
+.password-eye{
+    border: none;
+    position: absolute;
+    user-select: none;
+    right: 17px;
+    top: 19px;
+    opacity: .3;
+    cursor: pointer
+}
+.password-eye.active{
+    opacity: 1;
+}
+.password-eye-img{
+    pointer-events: none;
+}
+.restore{
+    width: 573px;
+    height: 293px;
+    border-radius: 30px;
+    padding: 64px 112px 60px 112px;
+}
+.modal-btn-restore{
+    width: 199px;
+    margin-top: 24px;
+}
+.alert{
+    width: 573px;
+    height: 269px;
+    border-radius: 30px;
+    padding: 90px 112px 90px 112px;
+    text-align: center;
+}
+.modal{
+    display: none ; 
+    position: fixed; 
+    z-index: 11; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}   
+.close{ 
+    position: absolute;
+    color: #8E8E8E;
+
+    font-size: 28px;
+    font-weight: bold;
+    user-select: none;
+    top: 0;
+    right: 0;
+    padding: 8% 8% 0 0;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-form{
+    display: none;
+    top: 20%;
+    margin: 0 auto;
+    position: relative;
+    background-color: #FFFFFF;
+}
+.createAccount{
+    width: 573px;
+    height: 935px;
+    border-radius: 30px;
+    padding: 100px 112px 100px 112px;
+    top: 0%;
+}
+.modal-date{
+    bottom: 19px;
+}
+.modal-profile{
+    width: 987px;
+    height: 717px;
+    border-radius: 47px;
+}
+.modal-profile-content{
+    display: flex;
+}
+@media (max-width : 740px){
+    .section .car-section{
+        margin: 100px 0 0 0;
+    }
+    .sec2{
+        padding: 0 20px 0 50px;  
+    }
+    .sec2_p{
+        margin: 0 20px 0 0;
+        font-size: 26px;
+    }
+}
+@media (max-width : 600px){
+    .authorization{
+        width: 300px;
+        height: auto;
+        padding: 30px 20px 30px 20px;
+    }
+    .modal-tel{
+        font-size: 18px;
+    }
+    #password1,#password2,#password3{
+        font-size: 18px;
+    }
+    .modal-a-auth{
+        font-size: 14px;
+    }
+    .modal-btn-auth{
+        width: 100px;
+    }
+    .checkbox{
+        left: 71px;
+    }
+    .restore{
+        width: 300px;
+        height: auto;
+        padding: 30px 20px 30px 20px;
+    }
+    .modal-input{
+        width: 260px;
+        font-size: 18px;
+    }
+    .modal-btn-restore{
+        width: 260px;
+    }
+    .modal-btn-create{
+        width: 260px;
+    }
+    .alert{
+        width: 300px;
+        height: auto;
+        padding: 40px 20px 30px 20px;
+    }
+    .createAccount{
+        width: 300px;
+        height: auto;
+        padding: 30px 20px 30px 20px;
+    }
+    .sec2{
+        padding: 0px 0px 0px 0px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .sec2_p{
+        margin: 0;
+        width: 300px;
+    }
+    .sec2_btn{
+        margin: 0;
+    }
+}
+
+/* @media (max-width : 1270px){
+    .sec2{
+        margin: 216px 20px 0 20px;
+    }
+} */
